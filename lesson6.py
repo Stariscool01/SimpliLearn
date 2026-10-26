@@ -125,3 +125,31 @@ a = my_gen()
 next(a)
 next(a)
 next(a)
+
+#Demo6
+sum = lambda arg1, arg2: arg1 + arg2;
+print("Value of total : ", sum( 10, 20 ))
+print("Value of total : ", sum( 20, 20 ))
+
+def fahrenheit(T):
+    return((float (9)/5)*T + 32)
+temperatures = (36.5, 37, 37.5, 38, 39)
+F = map(fahrenheit, temperatures)
+temperatures_in_Fahrenheit = list(map(fahrenheit, temperatures))
+print(temperatures_in_Fahrenheit)
+
+C = [39.2, 36.5, 37.3, 38, 37.8]
+F = list(map(lambda x: (float(9)/5)*x + 32, C))
+print(F)
+print("A")
+
+fahrenheit(10)
+
+x = 10
+y = 20
+from _functools import reduce
+print(reduce(lambda x,y: x+y, [1,2,3,4,5]))
+
+fibonacci = [0,1,1,2,3,5,8,13,21,34,55]
+odd_numbers = list(filter(lambda x: x % 2, fibonacci))
+print(odd_numbers)
