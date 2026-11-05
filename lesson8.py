@@ -75,3 +75,14 @@ while True:
         print("This value is too large, try again!")
         print()
 print("Congratulations! You guessed it correctly.")
+
+
+#Demo 2
+s = 'Hello, world.'
+print(str(s))
+print(repr(s))
+
+import datetime
+today = datetime.datetime.now()
+print(str(today))
+print(repr(today))
